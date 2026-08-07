@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18K Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <h1>18K Music</h1>
+        <div class="current-song" id="current-title">Seleziona una traccia</div>
+        <audio id="audio-player" controls></audio>
+
+        <!-- Sezione per caricare le canzoni dal telefono/PC -->
+        <div class="upload-section">
+            <h3>Aggiungi brano</h3>
+            <input type="file" id="file-input" accept=".mp3">
+            <button id="upload-btn">Carica su 18K</button>
+        </div>
+
+        <div class="playlist-section">
+            <h2>Playlist</h2>
+            <ul id="song-list"></ul>
+        </div>
+    </div>
+    <script src="js/player.js"></script>
+</body>
+</html>
