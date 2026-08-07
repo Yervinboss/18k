@@ -1,0 +1,79 @@
+body {
+    background-color: #0f0f13;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.player-container {
+    background: #1a1a24;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+    border: 1px solid #2a2a3d;
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: #00ffcc;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #8888aa;
+    margin-bottom: 20px;
+}
+
+.current-song {
+    background: #121218;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #00ffcc;
+    border: 1px solid #222233;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.playlist-section {
+    text-align: left;
+}
+
+.playlist-section h2 {
+    font-size: 1.1rem;
+    border-bottom: 1px solid #2a2a3d;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#song-list {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#song-list li {
+    background: #222233;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    font-size: 0.9rem;
+}
+
+#song-list li:hover {
+    background: #00ffcc;
+    color: #0f0f13;
+}
